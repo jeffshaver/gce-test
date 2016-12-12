@@ -18,5 +18,4 @@ router.get('*', function (req, res) {
 })
 var server = http.createServer(router);
 
-server.listen(process.env.PORT)
-
+server.listen(process.env.PORT || 8080)
